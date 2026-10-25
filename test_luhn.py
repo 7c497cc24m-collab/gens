@@ -31,7 +31,7 @@ class TestLuhn(unittest.TestCase):
     def test_cli(self):
         self.assertEqual(luhn.main(["validar", "79927398713"]), 0)
         self.assertEqual(luhn.main(["validar", "79927398710"]), 1)
-        self.assertEqual(luhn.main(["gen", "-p", "12", "-l", "4"]), 2)
+        self.assertEqual(luhn.main(["gen", "-p", "1234", "-l", "4"]), 2)
 
 
 if __name__ == "__main__":
